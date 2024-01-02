@@ -286,6 +286,55 @@ class myDrawer extends StatelessWidget {
                 ),
               ],
             ),
+            Divider(),
+            ExpansionTile(
+              textColor: drawerSelected01,
+              iconColor: drawerSelected01,
+              initiallyExpanded: false,
+              leading: const Icon(Icons.settings),
+              title: const Text(
+                'Configurações',
+                style: TextStyle(fontSize: drawerFontList01),
+              ),
+              children: [
+                ListTile(
+                  selectedTileColor: drawerSelected01,
+                  horizontalTitleGap: 8.0,
+                  leading: const Icon(Icons.manage_accounts),
+                  title: const Text(
+                    'Usuários',
+                    style: TextStyle(fontSize: drawerFontList02),
+                  ),
+                  onTap: () {
+                    print('Usuários');
+                  },
+                ),
+                ListTile(
+                  selectedTileColor: drawerSelected01,
+                  horizontalTitleGap: 8.0,
+                  leading: const Icon(Icons.route),
+                  title: const Text(
+                    'Entregadores',
+                    style: TextStyle(fontSize: drawerFontList02),
+                  ),
+                  onTap: () {
+                    print('Entregadores');
+                  },
+                ),
+                ListTile(
+                  selectedTileColor: drawerSelected01,
+                  horizontalTitleGap: 8.0,
+                  leading: const Icon(Icons.devices),
+                  title: const Text(
+                    'Sistema',
+                    style: TextStyle(fontSize: drawerFontList02),
+                  ),
+                  onTap: () {
+                    print('Sistema');
+                  },
+                ),
+              ],
+            ),
           ],
         ),
       ),

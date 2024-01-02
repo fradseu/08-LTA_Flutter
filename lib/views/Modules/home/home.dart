@@ -2,8 +2,8 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:weather_pack/weather_pack.dart';
+import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:html/parser.dart' as html;
 
 //Telas
 import '../../../constants/constants.dart';
@@ -87,19 +87,29 @@ class scrnHome extends StatelessWidget {
                                 double tempArred = double.parse(
                                     temperatura.toStringAsFixed(2));
 
-                                return Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Image.network(
+                                return Card(
+                                  elevation: 5, // Ajuste conforme necessário
+                                  margin: EdgeInsets.symmetric(
+                                      vertical: 8,
+                                      horizontal:
+                                          16), // Ajuste conforme necessário
+                                  child: ListTile(
+                                    leading: Image.network(
                                       urlIcone,
                                       scale: 2,
                                     ),
-                                    Text(
-                                      'Clima: $descricaoClima\n'
-                                      'Temperatura: $tempArred°C',
-                                      style: TextStyle(fontSize: h5Text),
+                                    title: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'Clima: $descricaoClima\n'
+                                          'Temperatura: $tempArred°C',
+                                          style: TextStyle(fontSize: h5Text),
+                                        ),
+                                      ],
                                     ),
-                                  ],
+                                  ),
                                 );
                               }
                               return Text('Nenhum dado disponível');
@@ -112,8 +122,8 @@ class scrnHome extends StatelessWidget {
                               style: Theme.of(context).textTheme.titleMedium,
                             ),
                           ),
-                          FutureBuilder<List<Map<String, String>>>(
-                            future: getStatusViaMobilidade(),
+                          FutureBuilder<List<Map<String, dynamic>>>(
+                            future: fetchData(),
                             builder: (context, snapshot) {
                               if (snapshot.connectionState ==
                                   ConnectionState.waiting) {
@@ -122,28 +132,75 @@ class scrnHome extends StatelessWidget {
                                 return Text(
                                     'Erro ao obter dados de mobilidade');
                               } else if (snapshot.hasData) {
-                                List<Map<String, String>> linhas =
+                                List<Map<String, dynamic>> linhas =
                                     snapshot.data!;
 
                                 return Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: linhas.map((linha) {
-                                    String status = linha['status'] ?? '';
-                                    bool isOperacaoNormal =
-                                        status.toLowerCase() ==
-                                            'operação normal';
-                                    return ListTile(
-                                      title: Text(
-                                        'Linha ${linha['numero']} - ${linha['status']}',
-                                        style: TextStyle(
-                                          color: isOperacaoNormal
-                                              ? fontColor
-                                              : Colors.amber,
-                                          fontSize:
-                                              16.0, // Ajuste o tamanho da fonte conforme necessário
-                                        ),
-                                      ),
-                                      // Outros atributos do ListTile conforme necessário
+                                    String nomeLinha = linha['nomeLinha'];
+                                    String statusLinha = linha['statusLinha'];
+
+                                    String leadingImage =
+                                        ''; // Caminho da imagem padrão, se não encontrar correspondência
+
+                                    // Mapeamento do nome da linha para o caminho da imagem
+                                    var imagens = {
+                                      "Linha 1 - Azul":
+                                          "assets/images/mobilidade/metro.png",
+                                      "Linha 2 - Verde":
+                                          "assets/images/mobilidade/metro.png",
+                                      "Linha 3 - Azul":
+                                          "assets/images/mobilidade/metro.png",
+                                      "Linha 4 - Amarela":
+                                          "assets/images/mobilidade/viaquatro.png",
+                                      "Linha 5 - Lilás":
+                                          "assets/images/mobilidade/viamobilidade.png",
+                                      "Linha 6 - Laranja":
+                                          "assets/images/mobilidade/Metro",
+                                      "Linha 7 - Rubi":
+                                          "assets/images/mobilidade/cptm.png",
+                                      "Linha 8 - Diamante":
+                                          "assets/images/mobilidade/cptm.png",
+                                      "Linha 9 - Esmeralda":
+                                          "assets/images/mobilidade/cptm.png",
+                                      "Linha 10 - Turquesa":
+                                          "assets/images/mobilidade/cptm.png",
+                                      "Linha 11 - Coral":
+                                          "assets/images/mobilidade/cptm.png",
+                                      "Linha 12 - Safira":
+                                          "assets/images/mobilidade/cptm.png",
+                                      "Linha 13 - Jade":
+                                          "assets/images/mobilidade/cptm.png",
+                                      "Linha 15 - Prata":
+                                          "assets/images/mobilidade/metro.png",
+                                    };
+
+                                    // Verificar se há correspondência no mapa de imagens
+                                    if (imagens.containsKey(nomeLinha)) {
+                                      leadingImage = imagens[nomeLinha]!;
+                                    }
+
+                                    return Card(
+                                      elevation: 5,
+                                      margin: EdgeInsets.symmetric(
+                                          vertical: 8, horizontal: 16),
+                                      child: ListTile(
+                                          leading: Image.asset(
+                                            leadingImage,
+                                            scale: 2,
+                                          ),
+                                          title: Text(nomeLinha),
+                                          subtitle: Text(
+                                            statusLinha,
+                                            style: TextStyle(
+                                              color: statusLinha !=
+                                                      "Operação Normal"
+                                                  ? Colors.amber
+                                                  : null,
+                                            ),
+                                          )
+                                          // Adicione aqui qualquer outra informação que você deseja exibir no Card
+                                          ),
                                     );
                                   }).toList(),
                                 );
@@ -172,43 +229,21 @@ class scrnHome extends StatelessWidget {
         latitude: -23.554472, longitude: -46.444024);
   }
 
-  Future<List<Map<String, String>>> getStatusViaMobilidade() async {
-    List<Map<String, String>> linhas = [];
+  Future<List<Map<String, dynamic>>> fetchData() async {
+    final response = await http.get(
+      Uri.parse(
+          'https://script.google.com/macros/s/AKfycbzjJKm8SQWEGz9dPkGgLTeUHrcNg8-gI7j8tJns3DOehXAjzfhp0Uh2oaHls4IyeXyk/exec?functionName=getMobilidadeSp'),
+    );
 
-    try {
-      final uri = Uri.parse('https://www.viamobilidade.com.br/');
-      final response = await http.get(uri);
-      if (response.statusCode == 200) {
-        var document = html.parse(response.body);
-
-        // Encontrar o grupo de linhas
-        var linhasGroup = document.querySelector('.line-wrapper');
-
-        // Verificar se o grupo de linhas foi encontrado
-        if (linhasGroup != null) {
-          // Encontrar todas as li dentro do grupo
-          var linhasHTML = linhasGroup.querySelectorAll('li');
-
-          // Iterar sobre as linhas
-          for (var linhaHTML in linhasHTML) {
-            // Encontrar os elementos dentro da li
-            var numero = linhaHTML.querySelector('span')?.text.trim();
-            var status = linhaHTML.querySelector('.status')?.text.trim();
-
-            // Adicionar os detalhes da linha à lista
-            linhas.add({'numero': numero ?? '', 'status': status ?? ''});
-          }
-        } else {
-          print('Grupo de linhas não encontrado');
-        }
-      } else {
-        print(
-            'Falha ao carregar a página da Via Mobilidade. Código de status: ${response.statusCode}');
-      }
-    } catch (e) {
-      print('Erro ao obter status da Via Mobilidade: $e');
+    if (response.statusCode == 200) {
+      // Se a solicitação foi bem-sucedida, analise o JSON
+      final Map<String, dynamic> data = json.decode(response.body);
+      final List<Map<String, dynamic>> linhas =
+          List<Map<String, dynamic>>.from(data['linhas']);
+      return linhas;
+    } else {
+      // Se a solicitação não foi bem-sucedida, lance uma exceção.
+      throw Exception('Falha ao carregar dados da API');
     }
-
-    return linhas;
   }
 }

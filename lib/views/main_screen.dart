@@ -1,4 +1,5 @@
 //Componentes
+
 import 'package:flutter/material.dart';
 
 //Tela
@@ -11,11 +12,16 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Row(
+          //Alinha o header na parte superior da tela.
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            myDrawer(),
+            AspectRatio(
+              aspectRatio: 0.4,
+              child: myDrawer(),
+            ),
             Expanded(
               // Esta parte ocupará 5/6 da tela,
-              flex: 5,
+              flex: 6,
               child: scrnHome(),
             ),
           ],

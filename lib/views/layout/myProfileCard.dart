@@ -22,12 +22,14 @@ class profileCard extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(
-            'assets/images/profile_pic.png',
+            'assets/images/adm2.png',
             height: 38,
+            filterQuality: FilterQuality
+                .none, // Evita antialiasing para manter a aparência pixelada
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
-            child: Text('Mia Khalifa'),
+            child: Text('Usuário'),
           ),
           Icon(Icons.keyboard_arrow_down),
         ],

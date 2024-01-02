@@ -12,6 +12,7 @@ class myDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      width: (MediaQuery.of(context).size.width) / 6,
       child: SingleChildScrollView(
         child: Column(
           children: [
@@ -113,6 +114,18 @@ class myDrawer extends StatelessWidget {
                   ),
                   onTap: () {
                     print('Carregar pedido');
+                  },
+                ),
+                ListTile(
+                  selectedTileColor: drawerSelected01,
+                  horizontalTitleGap: 8.0,
+                  leading: const Icon(Icons.report_problem_outlined),
+                  title: const Text(
+                    'Pedido em quarentena',
+                    style: TextStyle(fontSize: drawerFontList02),
+                  ),
+                  onTap: () {
+                    print('Pedido em quarentena');
                   },
                 ),
                 ListTile(

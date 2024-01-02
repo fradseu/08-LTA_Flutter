@@ -12,6 +12,7 @@ class searcheField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
+        hintText: "Procurar",
         fillColor: secondaryColor,
         filled: true,
         border: OutlineInputBorder(

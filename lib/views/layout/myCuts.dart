@@ -50,7 +50,7 @@ class MyCuts extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'Último corte: $ultimoCorte ',
+              'Último corte: $ultimoCorte ',   
               style: Theme.of(context).textTheme.titleMedium,
             ),
             ElevatedButton(

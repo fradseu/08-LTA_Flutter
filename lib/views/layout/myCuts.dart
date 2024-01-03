@@ -40,6 +40,8 @@ class MyCuts extends StatelessWidget {
     ],
   };
 
+  var ultimoCorte = "02/01/2024 20:36:39";
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -48,8 +50,8 @@ class MyCuts extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'Cortes',
-              style: Theme.of(context).textTheme.titleLarge,
+              'Último corte: $ultimoCorte ',
+              style: Theme.of(context).textTheme.titleMedium,
             ),
             ElevatedButton(
               onPressed: () {

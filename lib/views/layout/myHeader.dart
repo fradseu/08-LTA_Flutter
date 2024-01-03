@@ -12,8 +12,13 @@ class Header extends StatelessWidget {
     return Row(
       children: [
         Text(
-          'Home',
-          style: Theme.of(context).textTheme.titleLarge,
+          'Página Inicial',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 36, // Tamanho da fonte (ajuste conforme necessário)
+            fontWeight:
+                FontWeight.w500, // Peso da fonte (ajuste conforme necessário)
+          ),
         ),
         Spacer(flex: 2),
         Expanded(child: searcheField()),

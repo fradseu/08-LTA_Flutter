@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 
 //Telas
 import '../../../constants/constants.dart';
+import '../../layout/myCuts.dart';
 import '../../layout/myHeader.dart';
 
 class scrnHome extends StatelessWidget {
@@ -25,19 +26,11 @@ class scrnHome extends StatelessWidget {
             SizedBox(height: defaultPadding),
             //body
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                   flex: 70,
-                  child: Container(
-                    padding: EdgeInsets.all(defaultPadding),
-                    height: 500,
-                    decoration: BoxDecoration(
-                      color: secondaryColor,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(10),
-                      ),
-                    ),
-                  ),
+                  child: MyCuts(),
                 ),
                 SizedBox(width: defaultPadding),
                 Expanded(

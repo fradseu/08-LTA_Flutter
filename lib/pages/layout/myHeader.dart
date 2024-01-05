@@ -23,8 +23,8 @@ class Header extends StatelessWidget {
           ),
         ),
         Spacer(flex: 2),
-        Expanded(child: searcheField()),
-        profileCard(),
+        //Expanded(child: searcheField()),
+        //profileCard(),
       ],
     );
   }

@@ -16,6 +16,7 @@ class Header_PCP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var ultimoCorte = "02/01/2024 20:36:39";
     return Row(
       children: [
         Text(
@@ -27,8 +28,12 @@ class Header_PCP extends StatelessWidget {
           ),
         ),
         const Spacer(flex: 2),
-        const Expanded(child: searcheField()),
-        const profileCard(),
+        Text(
+          'Último corte: $ultimoCorte ',
+          style: Theme.of(context).textTheme.titleMedium,
+        ),
+        //const Expanded(child: searcheField()),
+        //const profileCard(),
       ],
     );
   }

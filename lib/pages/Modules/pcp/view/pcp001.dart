@@ -45,7 +45,6 @@ class pcp001 extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: defaultPadding),
-                MyFeeds_PCP(),
               ],
             ),
           ],

@@ -46,51 +46,51 @@ class MyCuts_PCP extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Wrap(
-          children: [
-            Text(
-              'Último corte: $ultimoCorte ',
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
-            const SizedBox(width: defaultPadding + 145),
-            ElevatedButton(
-              onPressed: () {
-                // Lógica do botão aqui
-              },
-              style: ElevatedButton.styleFrom(
-                foregroundColor: Colors.white,
-                backgroundColor: Colors.blue,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: defaultPadding * 1.5,
-                  vertical: defaultPadding,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                elevation: 5,
-              ),
-              child: const Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Flexible(
-                    child: Icon(
-                      Icons.search,
-                      size: 24,
-                    ),
-                  ),
-                  SizedBox(width: 2),
-                  Flexible(
-                    child: Text(
-                      'Verificar os cortes',
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
+        // Wrap(
+        //   children: [
+        //     Text(
+        //       'Último corte: $ultimoCorte ',
+        //       style: Theme.of(context).textTheme.titleMedium,
+        //     ),
+        //     const SizedBox(width: defaultPadding + 145),
+        //     ElevatedButton(
+        //       onPressed: () {
+        //         // Lógica do botão aqui
+        //       },
+        //       style: ElevatedButton.styleFrom(
+        //         foregroundColor: Colors.white,
+        //         backgroundColor: Colors.blue,
+        //         padding: const EdgeInsets.symmetric(
+        //           horizontal: defaultPadding * 1.5,
+        //           vertical: defaultPadding,
+        //         ),
+        //         shape: RoundedRectangleBorder(
+        //           borderRadius: BorderRadius.circular(8),
+        //         ),
+        //         elevation: 5,
+        //       ),
+        //       child: const Row(
+        //         mainAxisSize: MainAxisSize.min,
+        //         children: [
+        //           Flexible(
+        //             child: Icon(
+        //               Icons.search,
+        //               size: 24,
+        //             ),
+        //           ),
+        //           SizedBox(width: 2),
+        //           Flexible(
+        //             child: Text(
+        //               'Verificar os cortes',
+        //               overflow: TextOverflow.ellipsis,
+        //               maxLines: 1,
+        //             ),
+        //           ),
+        //         ],
+        //       ),
+        //     ),
+        //   ],
+        // ),
         const SizedBox(height: defaultPadding),
         Wrap(
           spacing: defaultPadding,

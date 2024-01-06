@@ -1,11 +1,10 @@
 //Componentes
 
 import 'package:flutter/material.dart';
-import 'package:lta_flutter_application_01/pages/Modules/home/view/home.dart';
+import 'package:lta_flutter_application_01/pages/Modules/home/view/home001.dart';
 import 'package:lta_flutter_application_01/pages/layout/myDrawer.dart';
 
 //Tela
-
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
@@ -24,7 +23,7 @@ class MainScreen extends StatelessWidget {
             Expanded(
               // Esta parte ocupará 5/6 da tela,
               flex: 6,
-              child: scrnHome(),
+              child: home001(),
             ),
           ],
         ),

@@ -1,8 +1,6 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:lta_flutter_application_01/pages/layout/myProfileCard.dart';
-import 'package:lta_flutter_application_01/pages/layout/mySearcheField.dart';
 
 class Header extends StatelessWidget {
   const Header({

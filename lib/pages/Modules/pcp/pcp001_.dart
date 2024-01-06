@@ -3,8 +3,8 @@
 // ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:lta_flutter_application_01/pages/Modules/pcp/layout/myDrawer.dart';
 import 'package:lta_flutter_application_01/pages/Modules/pcp/view/pcp001.dart';
+import '../../layout/myDrawer.dart';
 
 //Tela
 
@@ -21,7 +21,7 @@ class pcp001_ extends StatelessWidget {
           children: [
             const AspectRatio(
               aspectRatio: 0.4,
-              child: myDrawer_PCP(),
+              child: myDrawer(),
             ),
             Expanded(
               // Esta parte ocupará 5/6 da tela,

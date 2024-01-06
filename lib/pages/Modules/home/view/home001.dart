@@ -6,21 +6,28 @@ import 'package:flutter/material.dart';
 import '../../../../../constants/constants.dart';
 import '../../../layout/myCarousel.dart';
 import '../../../layout/myCuts.dart';
-import '../../../layout/myFeeds.dart';
-import '../../../layout/myHeader.dart';
 
-class scrnHome extends StatelessWidget {
-  const scrnHome({super.key});
+class home001 extends StatelessWidget {
+  const home001({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var title = "Página Inicial";
+    var ultimoCorte = "02/01/2024 20:36:39";
     return SafeArea(
       child: SingleChildScrollView(
         padding: EdgeInsets.all(defaultPadding),
         child: Column(
           children: [
             //Header
-            Header(),
+            Row(
+              children: [
+                Text(title, style: Theme.of(context).textTheme.titleLarge),
+                Spacer(flex: 2),
+                Text('Última carga: $ultimoCorte',
+                    style: Theme.of(context).textTheme.titleLarge),
+              ],
+            ),
             SizedBox(height: defaultPadding),
             //body
             Row(
@@ -32,17 +39,14 @@ class scrnHome extends StatelessWidget {
                     children: [
                       MyCuts(),
                       Divider(),
-                      SizedBox(
-                        height: defaultPadding,
-                      ),
+                      SizedBox(height: defaultPadding),
                       MyCarousel()
                     ],
                   ),
                 ),
                 SizedBox(width: defaultPadding),
-
                 //Lateral direita
-                MyFeeds(),
+                //MyFeeds(),
               ],
             ),
           ],

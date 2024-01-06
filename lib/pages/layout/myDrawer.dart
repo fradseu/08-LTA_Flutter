@@ -26,9 +26,9 @@ class myDrawer extends StatelessWidget {
               selectedTileColor: drawerSelected01,
               horizontalTitleGap: 16.0,
               leading: const Icon(Icons.home),
-              title: const Text(
+              title: Text(
                 'Início',
-                style: TextStyle(fontSize: drawerFontList01),
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               onTap: () {
                 Navigator.pushNamed(context, '/');
@@ -39,18 +39,18 @@ class myDrawer extends StatelessWidget {
               iconColor: drawerSelected01,
               initiallyExpanded: false,
               leading: const Icon(Icons.warehouse),
-              title: const Text(
+              title: Text(
                 'Estoque',
-                style: TextStyle(fontSize: drawerFontList01),
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               children: [
                 ListTile(
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.edit_note),
-                  title: const Text(
+                  title: Text(
                     'Cadastro',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Cadastro');
@@ -60,9 +60,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.share_location),
-                  title: const Text(
+                  title: Text(
                     'Localização',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Localização');
@@ -72,9 +72,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.sticky_note_2),
-                  title: const Text(
+                  title: Text(
                     'Movimentação',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Movimentação');
@@ -84,9 +84,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.auto_delete),
-                  title: const Text(
+                  title: Text(
                     'Validade',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Validade');
@@ -99,18 +99,18 @@ class myDrawer extends StatelessWidget {
               iconColor: drawerSelected01,
               initiallyExpanded: false,
               leading: const Icon(Icons.engineering),
-              title: const Text(
+              title: Text(
                 'PCP',
-                style: TextStyle(fontSize: drawerFontList01),
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               children: [
                 ListTile(
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.merge_type),
-                  title: const Text(
+                  title: Text(
                     'Carregar pedido',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     Navigator.pushNamed(context, '/pcp001');
@@ -120,9 +120,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.report_problem_outlined),
-                  title: const Text(
+                  title: Text(
                     'Pedido em quarentena',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Pedido em quarentena');
@@ -132,9 +132,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.receipt_long),
-                  title: const Text(
+                  title: Text(
                     'Corte',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Corte');
@@ -144,9 +144,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.view_timeline),
-                  title: const Text(
+                  title: Text(
                     'PMP',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('PMP');
@@ -156,9 +156,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.bar_chart),
-                  title: const Text(
+                  title: Text(
                     'Indicadores',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Indicadores');
@@ -168,9 +168,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.print),
-                  title: const Text(
+                  title: Text(
                     'Relatórios',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Relatórios');
@@ -183,18 +183,18 @@ class myDrawer extends StatelessWidget {
               iconColor: drawerSelected01,
               initiallyExpanded: false,
               leading: const Icon(Icons.factory),
-              title: const Text(
+              title: Text(
                 'Produção',
-                style: TextStyle(fontSize: drawerFontList01),
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               children: [
                 ListTile(
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.format_list_numbered),
-                  title: const Text(
+                  title: Text(
                     'Ordem de produção',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Ordem de produção');
@@ -204,9 +204,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.bakery_dining),
-                  title: const Text(
+                  title: Text(
                     'Forneamento',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Forneamento');
@@ -216,9 +216,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.fact_check),
-                  title: const Text(
+                  title: Text(
                     'Apontamento',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Apontamento');
@@ -228,9 +228,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.menu_book),
-                  title: const Text(
+                  title: Text(
                     'Receitas',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Receitas');
@@ -243,18 +243,18 @@ class myDrawer extends StatelessWidget {
               iconColor: drawerSelected01,
               initiallyExpanded: false,
               leading: const Icon(Icons.local_shipping),
-              title: const Text(
+              title: Text(
                 'Expedição',
-                style: TextStyle(fontSize: drawerFontList01),
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               children: [
                 ListTile(
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.call_split),
-                  title: const Text(
+                  title: Text(
                     'Separação',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Separação');
@@ -264,9 +264,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.ballot),
-                  title: const Text(
+                  title: Text(
                     'Pão francês',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Pão francês');
@@ -276,9 +276,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.ballot),
-                  title: const Text(
+                  title: Text(
                     'Mini pao francês',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Mini pao francês');
@@ -292,18 +292,18 @@ class myDrawer extends StatelessWidget {
               iconColor: drawerSelected01,
               initiallyExpanded: false,
               leading: const Icon(Icons.settings),
-              title: const Text(
+              title: Text(
                 'Configurações',
-                style: TextStyle(fontSize: drawerFontList01),
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               children: [
                 ListTile(
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.manage_accounts),
-                  title: const Text(
+                  title: Text(
                     'Usuários',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Usuários');
@@ -313,9 +313,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.route),
-                  title: const Text(
+                  title: Text(
                     'Entregadores',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Entregadores');
@@ -325,9 +325,9 @@ class myDrawer extends StatelessWidget {
                   selectedTileColor: drawerSelected01,
                   horizontalTitleGap: 8.0,
                   leading: const Icon(Icons.devices),
-                  title: const Text(
+                  title: Text(
                     'Sistema',
-                    style: TextStyle(fontSize: drawerFontList02),
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   onTap: () {
                     print('Sistema');

@@ -11,25 +11,25 @@ class MyCuts extends StatelessWidget {
   // Simulando dados JSON
   Map<String, List<Map<String, dynamic>>> simulatedData = {
     "Confeitaria": [
-      {"ESSENCIAL PAES": 123},
-      {"CORTE 14:00": 123},
-      {"CORTE 15:00": 123},
-      {"CORTE 16:00": 123},
-      {"URGENCIA": 10},
+      {"ESSENCIAL PAES": 3},
+      {"CORTE 14:00": 0},
+      {"CORTE 15:00": 0},
+      {"CORTE 16:00": 0},
+      {"URGENCIA": 0},
     ],
     "Pão de Leite": [
-      {"ESSENCIAL PAES": 123},
-      {"CORTE 14:00": 123},
-      {"CORTE 15:00": 123},
-      {"CORTE 16:00": 123},
-      {"URGENCIA": 10},
+      {"ESSENCIAL PAES": 25},
+      {"CORTE 14:00": 0},
+      {"CORTE 15:00": 0},
+      {"CORTE 16:00": 0},
+      {"URGENCIA": 1},
     ],
     "Pão de francês": [
-      {"ESSENCIAL PAES": 123},
-      {"CORTE 14:00": 123},
-      {"CORTE 15:00": 123},
-      {"CORTE 16:00": 123},
-      {"URGENCIA": 10},
+      {"ESSENCIAL PAES": 49},
+      {"CORTE 14:00": 0},
+      {"CORTE 15:00": 0},
+      {"CORTE 16:00": 0},
+      {"URGENCIA": 4},
     ],
     "Capacidades": [
       {"Confeitaria": "10%"},
@@ -51,22 +51,18 @@ class MyCuts extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Wrap(
-            children: [
-              Expanded(
-                child: Container(
-                  height: MediaQuery.of(context).size.height / 15,
-                  color: const Color.fromARGB(255, 132, 199, 138),
-                  child: Center(
-                    child: Text('Lista de pedidos',
-                        style: Theme.of(context).textTheme.titleLarge),
-                  ),
-                ),
-              ),
-            ],
+          Container(
+            height: MediaQuery.of(context).size.height / 15,
+            color: const Color.fromARGB(255, 132, 199, 138),
+            child: Center(
+              child: Text('Lista de pedidos',
+                  style: Theme.of(context).textTheme.titleLarge),
+            ),
           ),
+          const SizedBox(height: 8.0),
           Wrap(
             spacing: 30,
+            runSpacing: 10, // Adicionei runSpacing para espaçamento vertical
             children: simulatedData.entries
                 .map(
                   (entry) => CorteItem(

@@ -1,8 +1,8 @@
-// ignore_for_file: file_names
-
+import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/services.dart';
+import 'package:lta_flutter_application_01/constants/constants.dart';
 
 class MyCarousel extends StatelessWidget {
   const MyCarousel({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class MyCarousel extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
-        color: Colors.grey[200],
+        color: Colors.grey,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -20,7 +20,7 @@ class MyCarousel extends StatelessWidget {
           CarouselSlider.builder(
             itemCount: 5,
             options: CarouselOptions(
-              height: MediaQuery.of(context).size.height / 2,
+              height: MediaQuery.of(context).size.height / 2.5,
               enlargeCenterPage: true,
               autoPlay: true,
               aspectRatio: 16 / 9,

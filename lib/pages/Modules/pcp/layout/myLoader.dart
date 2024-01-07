@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import 'package:syncfusion_flutter_datagrid/datagrid.dart';
 import '../../../../provider/file_picker_provider.dart';
 
 class MyLoader_PCP extends StatelessWidget {
@@ -57,29 +57,30 @@ class MyLoader_PCP extends StatelessWidget {
                   child: Center(
                     child: Consumer<FilePickerProvider>(
                       builder: (context, filePickerProvider, child) {
-                        // Verifica se a lista de pedidos não está vazia
                         if (filePickerProvider.pedidosList.isNotEmpty) {
-                          // Obtém as chaves (headers) da primeira entrada no JSON
                           List<String> headers =
                               filePickerProvider.pedidosList[0].keys.toList();
 
-                          return SingleChildScrollView(
-                            scrollDirection: Axis.vertical,
-                            child: DataTable(
-                                columns: headers
-                                    .map(
-                                      (header) => DataColumn(
-                                        label: Text(header),
-                                      ),
-                                    )
-                                    .toList(),
-                                rows: filePickerProvider.pedidosList
-                                    .map((pedido) => DataRow(
-                                        cells: headers
-                                            .map((header) => DataCell(Text(
-                                                pedido[header].toString())))
-                                            .toList()))
-                                    .toList()),
+                          List<GridColumn> columns =
+                              headers.map<GridColumn>((header) {
+                            return GridColumn(
+                              columnName: header,
+                              label: Container(
+                                padding: EdgeInsets.all(8.0),
+                                alignment: Alignment.center,
+                                child: Text(
+                                  header,
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              autoFitPadding: EdgeInsets.all(8.0),
+                            );
+                          }).toList();
+
+                          return SfDataGrid(
+                            source:
+                                _getDataSource(filePickerProvider.pedidosList),
+                            columns: columns,
                           );
                         } else {
                           return Text('Nenhum dado disponível.');
@@ -93,6 +94,41 @@ class MyLoader_PCP extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  EmployeeDataSource _getDataSource(List<Map<String, dynamic>> data) {
+    List<DataGridRow> rows = data.map<DataGridRow>((rowData) {
+      return DataGridRow(
+        cells: rowData.entries.map<DataGridCell>((entry) {
+          return DataGridCell<dynamic>(
+              columnName: entry.key, value: entry.value);
+        }).toList(),
+      );
+    }).toList();
+
+    return EmployeeDataSource(rows: rows);
+  }
+}
+
+class EmployeeDataSource extends DataGridSource {
+  EmployeeDataSource({required this.rows});
+
+  final List<DataGridRow> rows;
+
+  @override
+  List<DataGridRow> get dataGridRows => rows;
+
+  @override
+  DataGridRowAdapter? buildRow(DataGridRow row) {
+    return DataGridRowAdapter(
+      cells: row.getCells().map<Widget>((dataGridCell) {
+        return Container(
+          alignment: Alignment.center,
+          padding: EdgeInsets.all(16.0),
+          child: Text(dataGridCell.value.toString()),
+        );
+      }).toList(),
     );
   }
 }

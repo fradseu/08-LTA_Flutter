@@ -9,17 +9,13 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
         Text(
           'Página Inicial',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 36, // Tamanho da fonte (ajuste conforme necessário)
-            fontWeight:
-                FontWeight.w500, // Peso da fonte (ajuste conforme necessário)
-          ),
+          style: Theme.of(context).textTheme.titleLarge,
         ),
+        // ignore: prefer_const_constructors
         Spacer(flex: 2),
         //Expanded(child: searcheField()),
         //profileCard(),

@@ -1,5 +1,5 @@
 // Importações necessárias para o Flutter
-// ignore_for_file: prefer_typing_uninitialized_variables, unused_local_variable, use_key_in_widget_constructors, avoid_print
+// ignore_for_file: prefer_typing_uninitialized_variables, unused_local_variable, use_key_in_widget_constructors, avoid_print, file_names
 /*
 Código LTA para automação de PCP 
 

@@ -1,6 +1,6 @@
 // file_picker_provider.dart
 
-// ignore_for_file: prefer_typing_uninitialized_variables, unused_local_variable
+// ignore_for_file: prefer_typing_uninitialized_variables, unused_local_variable, avoid_print
 
 import 'dart:convert';
 import 'package:file_picker/file_picker.dart';
@@ -15,6 +15,15 @@ class FilePickerProvider with ChangeNotifier {
   bool get hasData => _pedidosList.isNotEmpty;
 
   String get jsonResult => _jsonResult;
+
+  // Método para limpar a seleção
+  void limparSelecao() {
+    // Limpe a lista de pedidos ou faça qualquer outra lógica necessária
+    pedidosList.clear();
+
+    // Notifique os ouvintes (widgets) que os dados foram alterados
+    notifyListeners();
+  }
 
   Future<void> pickAndReadTxt() async {
     try {

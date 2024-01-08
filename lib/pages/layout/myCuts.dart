@@ -39,7 +39,7 @@ class MyCuts extends StatelessWidget {
     ],
   };
 
-  static const String ultimoCorte = "02/01/2024 20:36:39";
+  static const String ultimoCorte = "07/01/2024 19:20:39";
 
   @override
   Widget build(BuildContext context) {

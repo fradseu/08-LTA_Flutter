@@ -1,8 +1,8 @@
-import 'dart:typed_data';
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/services.dart';
-import 'package:lta_flutter_application_01/constants/constants.dart';
 
 class MyCarousel extends StatelessWidget {
   const MyCarousel({Key? key}) : super(key: key);

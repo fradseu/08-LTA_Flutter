@@ -1,6 +1,6 @@
 // file_picker_provider.dart
 
-// ignore_for_file: prefer_typing_uninitialized_variables, unused_local_variable, avoid_print
+// ignore_for_file: prefer_typing_uninitialized_variables, unused_local_variable, avoid_print, non_constant_identifier_names
 
 import 'dart:convert';
 import 'package:file_picker/file_picker.dart';
@@ -48,6 +48,19 @@ class FilePickerProvider with ChangeNotifier {
         var hora;
         var horaentrega;
 
+        //VARIÁVEIS PARA CONTROLE DO PEDIDO
+        var fa_cod = '';
+        var fa_descricao = '';
+        var setores = '';
+        var horapreparacao = '';
+        var horaembalagem = '';
+        var tipodeentrega = ''; //horário fixo ou variável
+        var nf_ = '';
+        var entregador = '';
+        var mapa_entrega_1 = '';
+        var mapa_entrega_2 = '';
+        var status = '';
+        var quarentena = '';
         _pedidosList = [];
 
         List<String> palavrasChave = [
@@ -147,6 +160,18 @@ class FilePickerProvider with ChangeNotifier {
               'CodigoProduto': codigoProduto,
               'NomeProduto': nomeProduto,
               'Quantidade': quantidade,
+              'fa_cod': fa_cod,
+              'fa_descricao': fa_descricao,
+              'setores': setores,
+              'horapreparacao': horapreparacao,
+              'horaembalagem': horaembalagem,
+              'tipodeentrega': tipodeentrega,
+              'nf_': nf_,
+              'entregador': entregador,
+              'mapa_entrega_1': mapa_entrega_1,
+              'mapa_entrega_2': mapa_entrega_2,
+              'status': status,
+              'quarentena': quarentena,
             };
 
             _pedidosList.add(pedidoMap);

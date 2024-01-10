@@ -181,24 +181,80 @@ class MyLoader_PCP extends StatelessWidget {
                             'quantidade': 'Quantidade',
                           };
 
+                          List<String> headersToHide = [
+                            'fa_cod',
+                            'fa_descricao',
+                            'setores',
+                            'horapreparacao',
+                            'horaembalagem',
+                            'tipodeentrega',
+                            'nf_',
+                            'entregador',
+                            'mapa_entrega_1',
+                            'mapa_entrega_2',
+                            'status',
+                            'quarentena',
+                          ];
+
                           List<GridColumn> columns =
                               headers.map<GridColumn>((header) {
+                            bool isVisible;
+                            try {
+                              // Verifica se o header está na lista de headersToHide
+                              isVisible = !headersToHide.contains(header);
+                            } catch (e) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(
+                                    'Erro ao processar headers: $e',
+                                    textAlign: TextAlign.center,
+                                  ),
+                                  duration: const Duration(seconds: 3),
+                                ),
+                              );
+                              isVisible =
+                                  false; // Define como false para ocultar a coluna
+                            }
+
                             return GridColumn(
                               columnName: header,
+                              visible: isVisible,
                               label: Container(
                                 padding: const EdgeInsets.all(8.0),
                                 alignment: Alignment.centerLeft,
-                                child: Text(
-                                  headerLabels[header] ?? header,
-                                  style: Theme.of(context).textTheme.bodySmall,
-                                ),
+                                child: isVisible
+                                    ? Text(
+                                        headerLabels[header] ?? header,
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .bodySmall,
+                                      )
+                                    : const SizedBox(),
                               ),
                               autoFitPadding: const EdgeInsets.all(8.0),
-                              width: header == 'nomedocliente'
-                                  ? 300.0
-                                  : header == 'nomeproduto'
-                                      ? 200.0
-                                      : MediaQuery.of(context).size.height / 6,
+                              width: isVisible
+                                  ? (header == 'pedido'
+                                      ? 85.0
+                                      : header == 'dataentrega'
+                                          ? 85.0
+                                          : header == 'horaentrega'
+                                              ? 85.0
+                                              : header == 'cdcliente'
+                                                  ? 85.0
+                                                  : header == 'nomedocliente'
+                                                      ? 300.0
+                                                      : header ==
+                                                              'codigoproduto'
+                                                          ? 85.0
+                                                          : header ==
+                                                                  'nomeproduto'
+                                                              ? 200.0
+                                                              : MediaQuery.of(
+                                                                          context)
+                                                                      .size
+                                                                      .height /
+                                                                  6)
+                                  : 0.0,
                             );
                           }).toList();
 
@@ -258,7 +314,7 @@ class EmployeeDataSource extends DataGridSource {
     return DataGridRowAdapter(
       cells: row.getCells().map<Widget>((dataGridCell) {
         return Container(
-          alignment: Alignment.centerLeft,
+          alignment: Alignment.topLeft,
           padding: const EdgeInsets.all(16.0),
           child: Text(
             dataGridCell.value.toString(),

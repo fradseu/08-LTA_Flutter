@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "449932281238",
+    "project_id": "sglta2023",
+    "storage_bucket": "sglta2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449932281238:android:70e011ff158ea4c6e409b7",
+        "android_client_info": {
+          "package_name": "com.example.lta_flutter_application_01"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKAnN8hTsBc68ExdCbEFW4rBjgnCTMDqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,8 +8,16 @@ import 'package:lta_flutter_application_01/pages/Modules/home/home001_.dart';
 import 'package:provider/provider.dart';
 import 'constants/constants.dart';
 import 'provider/file_picker_provider.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  //inicialização do firebase
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(
     MultiProvider(
       providers: [

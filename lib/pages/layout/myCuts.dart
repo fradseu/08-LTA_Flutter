@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable, file_names
 
 import 'package:flutter/material.dart';
+import 'package:lta_flutter_application_01/extensions/size_extensions.dart';
 import '../../constants/constants.dart';
 
 class MyCuts extends StatelessWidget {
@@ -52,7 +53,7 @@ class MyCuts extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: MediaQuery.of(context).size.height / 15,
+            height: context.percentHeight(.06),
             color: const Color.fromARGB(255, 132, 199, 138),
             child: Center(
               child: Text('Lista de pedidos',
@@ -110,7 +111,7 @@ class CorteItem extends StatelessWidget {
       elevation: 5,
       margin: const EdgeInsets.all(8.0),
       child: SizedBox(
-        width: MediaQuery.of(context).size.width * 0.11,
+        width: context.percentWidth(.11),
         child: ListTile(
           contentPadding: const EdgeInsets.all(10),
           title: Text(

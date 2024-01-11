@@ -21,11 +21,14 @@ class home001 extends StatelessWidget {
           children: [
             //Header
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text(title, style: Theme.of(context).textTheme.titleLarge),
-                Spacer(flex: 2),
-                Text('Última carga: $ultimoCorte',
-                    style: Theme.of(context).textTheme.titleLarge),
+                Spacer(flex: 1),
+                Flexible(
+                  child: Text('Última carga: $ultimoCorte',
+                      style: Theme.of(context).textTheme.titleLarge),
+                ),
               ],
             ),
             SizedBox(height: defaultPadding),

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:lta_flutter_application_01/constants/constants.dart';
+import 'package:lta_flutter_application_01/extensions/size_extensions.dart';
 import 'package:provider/provider.dart';
 import 'package:syncfusion_flutter_datagrid/datagrid.dart';
 import '../../../../provider/file_picker_provider.dart';
@@ -25,7 +26,7 @@ class MyLoader_PCP extends StatelessWidget {
             children: [
               Expanded(
                 child: Container(
-                  height: MediaQuery.of(context).size.height / 15,
+                  height: context.percentHeight(.06),
                   color: const Color.fromARGB(255, 132, 199, 138),
                   child: Center(
                     child: Text('Lista de pedidos',
@@ -156,7 +157,7 @@ class MyLoader_PCP extends StatelessWidget {
             children: [
               Expanded(
                 child: Container(
-                  height: MediaQuery.of(context).size.height / 1.75,
+                  height: context.percentHeight(.57),
                   color: secondaryColor,
                   child: Center(
                     child: Consumer<FilePickerProvider>(

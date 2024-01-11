@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/services.dart';
+import 'package:lta_flutter_application_01/extensions/size_extensions.dart';
 
 class MyCarousel extends StatelessWidget {
   const MyCarousel({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class MyCarousel extends StatelessWidget {
           CarouselSlider.builder(
             itemCount: 5,
             options: CarouselOptions(
-              height: MediaQuery.of(context).size.height / 2.5,
+              height: context.percentHeight(.40),
               enlargeCenterPage: true,
               autoPlay: true,
               aspectRatio: 16 / 9,
@@ -36,7 +37,7 @@ class MyCarousel extends StatelessWidget {
                 builder: (context, snapshot) {
                   if (snapshot.connectionState == ConnectionState.done) {
                     return Container(
-                      width: MediaQuery.of(context).size.width,
+                      width: context.screenWidth,
                       margin: const EdgeInsets.symmetric(horizontal: 5.0),
                       child: Image.memory(
                         snapshot.data!,

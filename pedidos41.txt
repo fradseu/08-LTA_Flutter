@@ -1,0 +1,374 @@
+                   Relat�rio de Pedidos de Venda  - Por Cliente Anal�tico 2
+M W COMERCIO DE PAES LTDA IND 1 - CNPJ : 33.017.318/0001-34               Empresa/Filial: 001
+Entrega: 06/01/24 00:00 � 06/01/24 Filial: 1
+SGLinear:  (pedidos41) - Usu�rio:  - Data/Hora impres.: 05/01/2024 18:34:05
+
+                                                                                P�gina 1 de 1
+Cliente: 0000008 - DIE MEISTER STUBE RESTAURANTE LTDA ME
+Email:contato@diemeister.com.br             Telefone5536-4982
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09011326/12/21/2024  09:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  36,30
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+001212BAGUETTE 50CM - 270G                                  2,000     8,00      0,00    16,00
+002488BAGUETTE 50CM C/ GERGELIM - 270G                      2,000    10,15      0,00    20,30
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        36,30
+
+
+Cliente: 0000009 - CLINICA DE RETAGUARDA HOSPITALAR MOEMA - RESIDENCIAL RETAGUARDA
+Email:                                      Telefone1150980134
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08999921/12/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  26,10
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+001007PAO DE LEITE 50G (BISNAGA)                            6,000     1,60      0,00     9,60
+004196PAO FRANCES 50G - KG                                  0,750    22,00      0,00    16,50
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        26,10
+
+
+Cliente: 0000019 - RIGO BREAD DELIVERY
+Email:                                      Telefone00000000000
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09040505/01/21/2024  05:00:00001 0000003 - MARCELO CAMAR CORTE 16:00      0,00    0,00 192,30
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+002330PAO FRANCES 60G                                     250,000     0,67      0,00   167,50
+001007PAO DE LEITE 50G (BISNAGA)                           31,000     0,80      0,00    24,80
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09040605/01/21/2024  06:00:00001 0000003 - MARCELO CAMAR CORTE 16:00      0,00    0,00 134,00
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+002330PAO FRANCES 60G                                     200,000     0,67      0,00   134,00
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09040705/01/21/2024  08:00:00001 0000003 - MARCELO CAMAR CORTE 16:00      0,00    0,00  50,25
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+002330PAO FRANCES 60G                                      75,000     0,67      0,00    50,25
+Total Cliente      d. Pedidos:  3           ot. desc.:       0,00  ot. Pedidos :       376,55
+
+
+Cliente: 0000028 - EDIFICIO MOEMA COMFORT HOTEL  TRADE CENTER - COMFORT IBIRAPUERA
+Email:rh.coib@atlanticahotels.com.br        Telefone01121977207
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08998421/12/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00   8,48
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  0,400    21,20      0,00     8,48
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :         8,48
+
+
+Cliente: 0000032 - BONJARDIM PAULISTA COMERCIO DE ALIMENTA��O LTDA - BONJARDIM RESTAURANTE
+Email:contasapagar@bonjardim.com.br         Telefone01134591220
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08998321/12/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  35,20
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+000602PAO FRANCES 25G                                      40,000     0,52      0,00    20,80
+000608PAO INTEGRAL FRANCES 25G                             20,000     0,72      0,00    14,40
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        35,20
+
+
+Cliente: 0000033 - RESIDENCIAL GERI�TRICO BROOKLIN
+Email:                                      Telefone01143014446
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08999721/12/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  65,00
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+001007PAO DE LEITE 50G (BISNAGA)                           20,000     1,60      0,00    32,00
+004196PAO FRANCES 50G - KG                                  1,500    22,00      0,00    33,00
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        65,00
+
+
+Cliente: 0000043 - EDISON FIOCHI E CIA LTDA -ME
+Email:                                      Telefone01100000000
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08998821/12/21/2024  03:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00 183,60
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+000001PAO FRANCES 50G                                     340,000     0,54      0,00   183,60
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :       183,60
+
+
+Cliente: 0000065 - COND. EDIF. LE QUARTIER MOEMA
+Email:lequartieradm@yahoo.com.br            Telefone001130852711
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08998121/12/21/2024  07:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00   8,48
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  0,400    21,20      0,00     8,48
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08998721/12/21/2024  11:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00   3,18
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  0,150    21,20      0,00     3,18
+Total Cliente      d. Pedidos:  2           ot. desc.:       0,00  ot. Pedidos :        11,66
+
+
+Cliente: 0000068 - TRIX ALIMENTACAO EIRELI - PUERI DOMUS VERBO DIVINO
+Email:tatiane@trixalimentacao.com.br        Telefone1151836267
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09021505/01/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  21,20
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  1,000    21,20      0,00    21,20
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09039005/01/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  88,00
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+003768MP CAFE 500G                                          4,000    22,00      0,00    88,00
+Total Cliente      d. Pedidos:  2           ot. desc.:       0,00  ot. Pedidos :       109,20
+
+
+Cliente: 0000094 - FANTASTIC WORLD LTDA - BUFFET FANTASTIC WORLD LTDA
+Email:saradeusa29@gmail.com                 Telefone1137425644
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09038605/01/21/2024  11:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  31,20
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+000602PAO FRANCES 25G                                      60,000     0,52      0,00    31,20
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        31,20
+
+
+Cliente: 0000106 - CONDOMINIO EDIFICIO DOMANI III - EDIFICIO DOMANI III
+Email:miranda@solution.sindicancia.com.br   Telefone
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08998221/12/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  14,84
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  0,700    21,20      0,00    14,84
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        14,84
+
+
+Cliente: 0000177 - SAPPORO RESTAURANTE LTDA ME - RESTAURANTE SAPPORO
+Email:                                      Telefone001150515458
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08999821/12/21/2024  08:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  49,50
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  2,250    22,00      0,00    49,50
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        49,50
+
+
+Cliente: 0000197 - EDIFICIO LA  CONCORDE JARDIM EUROPA - CLARION FARIA LIMA
+Email:condominio.clfl@atlanticahotels.com.brTelefone01121977553
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08998521/12/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  15,90
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  0,750    21,20      0,00    15,90
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        15,90
+
+
+Cliente: 0000201 - PIXIRICA GASTROLOUNGE LTDA - PIXIRICA GASTROLOUNGE
+Email:contato@plocgreen.com.br              Telefone
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09038905/01/21/2024  14:00:00001 0000003 - MARCELO CAMAR CORTE 14:00      0,00    0,00  72,00
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+005571CIABATTA 10X10CM - QUADRADA                          60,000     1,20      0,00    72,00
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        72,00
+
+
+Cliente: 0000204 - REGILENE CARDOSO DA SILVA OLIVEIRA - MERCURE PAMPLONA
+Email:financeiro1@lejadys.com.br            Telefone1164859005
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09041405/01/21/2024  03:00:00001 0000003 - MARCELO CAMAR URGENCIA         0,00    0,00  67,80
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+000602PAO FRANCES 25G                                      25,000     0,52      0,00    13,00
+000603PAO FRANCES 25G COM PARMESAO                         20,000     0,89      0,00    17,80
+001212BAGUETTE 50CM - 270G                                  2,000     8,00      0,00    16,00
+005009PAO DE LEITE COB ACUCAR CRISTAL 20G (BISNAGA)        20,000     1,05      0,00    21,00
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        67,80
+
+
+Cliente: 0000211 - CLUBE SIRIO EVENTOS
+Email:                                      Telefone01121898500
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09009126/12/21/2024  08:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00 118,16
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+003695BOLO DE CHOCOLATE                                     4,000    29,54      0,00   118,16
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :       118,16
+
+
+Cliente: 0000270 - CFR CERVEJARIA - SOMA CERVEJARIA
+Email:soma.cervejaria@gmail.com             Telefone(11)99186-5013
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09021405/01/21/2024  15:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00 234,50
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+000039PAO DE HAMB BRIOCHE 06X50G                           15,000    10,30      0,00   154,50
+001212BAGUETTE 50CM - 270G                                 10,000     8,00      0,00    80,00
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :       234,50
+
+
+Cliente: 0000304 - ESPA�O TERRALEGRIA - TRISTAO EVENTOS LTDA
+Email:thigoarlotta@gmail.com                Telefone115535-4584
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09020004/01/21/2024  10:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  80,00
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+002235FRANCES REDONDO 25G                                  80,000     0,52      0,00    41,60
+000236PAO DE LEITE 20G (BISNAGA)                           60,000     0,64      0,00    38,40
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        80,00
+
+
+Cliente: 0000340 - CENTRO DE REPOUSO VILA MARIANA LTDA
+Email:marina@casadavilamariana.com.br       Telefone
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08998921/12/21/2024  07:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  17,33
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  0,750    21,20      0,00    15,90
+000056PAO INTEGRAL FRANCES 50G                              1,000     1,43      0,00     1,43
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        17,33
+
+
+Cliente: 0000343 - CENTRO DE REPOUSO VILA MARIANA UNID VAMPRE 102
+Email:marina@casadavilamariana.com.br       Telefone
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08999321/12/21/2024  07:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  78,94
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+000218PAO DE LEITE 50G COM MARGARINA EMBALADO              26,000     2,30      0,00    59,80
+004196PAO FRANCES 50G - KG                                  0,450    21,20      0,00     9,54
+004353PAO INTEGRAL 50G (BISNAGA)                            4,000     2,40      0,00     9,60
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        78,94
+
+
+Cliente: 0000344 - CENTRO DE REPOUSO VL MARIANA UNID JOAQUIM  TAVORA
+Email:marina@casadavilamariana.com.br       Telefone
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08999021/12/21/2024  07:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  51,10
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  1,450    21,20      0,00    30,74
+000056PAO INTEGRAL FRANCES 50G                             12,000     1,43      0,00    17,16
+001007PAO DE LEITE 50G (BISNAGA)                            2,000     1,60      0,00     3,20
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        51,10
+
+
+Cliente: 0000345 - CENTRO DE REPOUSO VILA MARIANA UNID MADRE CABRINI
+Email:marina@casadavilamariana.com.br       Telefone0
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08999121/12/21/2024  07:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  51,03
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  1,800    21,20      0,00    38,16
+000056PAO INTEGRAL FRANCES 50G                              9,000     1,43      0,00    12,87
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        51,03
+
+
+Cliente: 0000490 - MINHA PRENDA
+Email:                                      Telefone
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08999421/12/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  26,80
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004339PAO FRANCES 60G COM EMBALAGEM PAPEL                  40,000     0,67      0,00    26,80
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        26,80
+
+
+Cliente: 0000516 - CASTOR - ADMINISTRACAO DE HOTELARIA LTDA
+Email:                                      Telefone((11) 2878-5500
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09000021/12/21/2024  03:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  21,20
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  1,000    21,20      0,00    21,20
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        21,20
+
+
+Cliente: 0000575 - INTERCITY PAMPLONA
+Email:                                      Telefone
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09021605/01/21/2024  03:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  57,25
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+000603PAO FRANCES 25G COM PARMESAO                         25,000     0,89      0,00    22,25
+000602PAO FRANCES 25G                                      35,000     0,52      0,00    18,20
+000257PAO DE LEITE 25G COM CREME (BISNAGA)                 15,000     1,12      0,00    16,80
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        57,25
+
+
+Cliente: 0000624 - SLAVIERO EMPREENDIMENTOS HOTELEIROS LTDA - SLAVIERO SLIM CONGONHAS
+Email:                                      Telefone115093-1350
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09038705/01/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00 278,00
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+000048CROISSANT 25G GOIABADA                               80,000     1,90      0,00   152,00
+000449SONHO 20G SABOR CREME - FRITO                        90,000     1,40      0,00   126,00
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :       278,00
+
+
+Cliente: 0000625 - CONDOMINIO DO EDIFICIO BERRINI PLAZA
+Email:rh@wyndhamberrini.com                 Telefone
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08998621/12/21/2024  06:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  10,60
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  0,500    21,20      0,00    10,60
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        10,60
+
+
+Cliente: 0000632 - MERCADO CABRAL E COUTINHO LTDA
+Email:MERCADOCABRALECOUTINHO@HOTMAIL.COM    Telefone55066320
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08999521/12/21/2024  07:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  82,50
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  6,250    13,20      0,00    82,50
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+08999621/12/21/2024  12:00:00001 0000003 - MARCELO CAMAR ESSENCIAL PAE    0,00    0,00  66,00
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+004196PAO FRANCES 50G - KG                                  5,000    13,20      0,00    66,00
+Total Cliente      d. Pedidos:  2           ot. desc.:       0,00  ot. Pedidos :       148,50
+
+
+Cliente: 0000653 - LAVORO MATERIAIS DE CONST. DULCHE MOEMA - DULCHE MOEMA
+Email:                                      Telefone
+Obs:
+
+PedidoData   Dt/Hora Entreg Fili Vendedor              Cond. Pagtet/seg/Out R$esc. $    Total
+09040305/01/21/2024  07:30:00001 0000003 - MARCELO CAMAR CORTE 16:00      0,00    0,00  11,00
+C�digoDescri��o                                           Quant.   V.Unit.   Desc. $    Total
+000001PAO FRANCES 50G                                      10,000     1,10      0,00    11,00
+Total Cliente      d. Pedidos:  1           ot. desc.:       0,00  ot. Pedidos :        11,00
+
+
+                                                                  Total Desconto:        0,00
+
+                                                                   Total Pedidos:    2.287,74
+                                                              Quantidade Pedidos:          34
+                                                            uantidade Clientes:            29
